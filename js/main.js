@@ -31,5 +31,15 @@ function reves(str){
     let tmpStr="";
     for(let indice =str.length-1; indice >= 0; indice--){
         tmpStr += str.charAt(indice);
-    }//for indice
+    }//for indice //En console escribimos reves("Laura Alina");
 }//reves
+
+//Palíndromo:
+function esPalindromo(str){
+    str =str.toLowerCase();
+    str=str.replaceAll(" ", "");
+    if (reves(str)==str)
+        return true;
+    
+    return false;
+}//esPalindromo  //escribimos en console esPalindromo("Ana")  y nos saldrá true
