@@ -24,5 +24,12 @@ console.log(letra, contFinal);
 
 
 //Entrada
-"Laura Aline"
-"enilA aruaL"  //Así tiene que quedar, poner al revés el nombre
+// "Laura Aline"
+// "enilA aruaL"  //Así tiene que quedar, poner al revés el nombre
+
+function reves(str){
+    let tmpStr="";
+    for(let indice =str.length-1; indice >= 0; indice--){
+        tmpStr += str.charAt(indice);
+    }//for indice
+}//reves
